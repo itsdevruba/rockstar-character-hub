@@ -18,3 +18,7 @@ rich==15.0.0
 typing-inspection==0.4.4
 typing_extensions==4.16.0
 wcwidth==0.8.3
+
+# --- Web version (streamlit run app.py) ---
+streamlit>=1.40
+plotly>=5.24

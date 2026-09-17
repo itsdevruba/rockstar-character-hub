@@ -5,6 +5,8 @@ An interactive command-line app for fans of Rockstar Games. Browse characters fr
 
 The hub has two kinds of users: **users**, who log in with their name and keep their own ratings and quiz results, and an **admin**, who manages quiz results, users and characters.
 
+There is also a **web version** of the quiz and the character browser, built with Streamlit: *(live link to be added after deployment)*
+
 ## Features & User Stories
 
 #### As a user I should be able to:
@@ -67,11 +69,24 @@ The hub has two kinds of users: **users**, who log in with their name and keep t
 - **Manage characters** → add, edit, or delete custom characters.
 - **Log out** → go back to the start menu.
 
+## Web version
+`app.py` is a [Streamlit](https://streamlit.io) front end for the two features that work well for anyone with a browser: the **"Which character are you?" quiz** and the **character browser**. It imports the same functions from `hub/` as the terminal app, so both versions always calculate a match the same way.
+
+Run it locally with:
+```
+streamlit run app.py
+```
+
+Ratings, tier lists, user accounts, the admin area and the **AI interview** stay in the terminal version only: they need a local Ollama model and per-user files, which a shared web app can't provide.
+
 ## Project Structure
 ```
 UNIT_PROJECT/
-├── main.py                 # start here: user / admin login
-├── hub/                    # the app package
+├── main.py                 # start here: user / admin login (CLI)
+├── app.py                  # the web version (Streamlit)
+├── .streamlit/
+│   └── config.toml         # theme for the web version
+├── hub/                    # the app package (shared by both versions)
 │   ├── config.py           # paths, criteria, tiers, traits, limits
 │   ├── storage.py          # load/save JSON safely
 │   ├── display.py          # rich tables and panels
@@ -99,6 +114,8 @@ Files created while using the app (not tracked by git): `data/user_ratings.json`
 | [questionary](https://pypi.org/project/questionary/) | Interactive menus you control with the arrow keys, text input and yes/no questions |
 | [pyfiglet](https://pypi.org/project/pyfiglet/) | The big ASCII-art title shown when the app starts |
 | [ollama](https://pypi.org/project/ollama/) | Talking to the local AI model for the "Interview with AI" quiz |
+| [streamlit](https://pypi.org/project/streamlit/) | The web version: pages, tabs, forms and state |
+| [plotly](https://pypi.org/project/plotly/) | The trait comparison chart in the web version |
 
 #### Built-in Python modules
 | Module | What it's used for |
