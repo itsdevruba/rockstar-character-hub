@@ -169,5 +169,51 @@
         "loyalty": -1
       }
     }
+  },
+  {
+    "text": "It's the night before a big job. How do you spend it?",
+    "options": {
+      "Drinking and telling stories with the crew": {
+        "humor": 2,
+        "loyalty": 1
+      },
+      "Going over the plan again, alone and silent": {
+        "humor": -2,
+        "ambition": 2
+      },
+      "With the people you love, in case it goes wrong": {
+        "loyalty": 2,
+        "morality": 1,
+        "humor": -1
+      },
+      "Starting trouble somewhere to burn off the nerves": {
+        "temper": 2,
+        "humor": -1,
+        "ambition": -1
+      }
+    }
+  },
+  {
+    "text": "A rival offers you a bigger cut to switch sides.",
+    "options": {
+      "Take it, loyalty doesn't pay the bills": {
+        "ambition": 2,
+        "loyalty": -2
+      },
+      "Tell your crew before he finishes talking": {
+        "loyalty": 2,
+        "morality": 1
+      },
+      "Refuse, then make him regret asking": {
+        "temper": 2,
+        "loyalty": 1,
+        "humor": -1
+      },
+      "Walk away from all of it, you're done with this life": {
+        "ambition": -2,
+        "morality": 1,
+        "temper": -1
+      }
+    }
   }
 ]
