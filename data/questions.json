@@ -9,7 +9,9 @@
       },
       "Pay a lawyer and wait": {
         "loyalty": 1,
-        "morality": 1
+        "morality": 1,
+        "temper": -1,
+        "humor": -1
       },
       "Take his share of the money": {
         "loyalty": -2,
@@ -17,7 +19,8 @@
       },
       "Crack a joke and move on": {
         "humor": 2,
-        "loyalty": -1
+        "loyalty": -1,
+        "ambition": -1
       }
     }
   },
@@ -30,15 +33,18 @@
       },
       "Laugh it off and buy him a drink": {
         "humor": 2,
-        "temper": -2
+        "temper": -2,
+        "ambition": -1
       },
       "Ignore him, you have bigger plans": {
         "ambition": 1,
-        "temper": -1
+        "temper": -1,
+        "humor": -1
       },
       "Calmly tell him to apologize": {
         "morality": 1,
-        "temper": -1
+        "temper": -1,
+        "humor": -1
       }
     }
   },
@@ -47,7 +53,8 @@
     "options": {
       "Keep it all, this is your big break": {
         "ambition": 2,
-        "morality": -1
+        "morality": -1,
+        "humor": -1
       },
       "Split it with your crew": {
         "loyalty": 2,
@@ -59,7 +66,9 @@
       },
       "Blow it all on one wild night": {
         "humor": 2,
-        "ambition": -1
+        "ambition": -1,
+        "loyalty": -1,
+        "morality": -1
       }
     }
   },
@@ -68,15 +77,19 @@
     "options": {
       "Do it anyway, loyalty comes first": {
         "loyalty": 2,
-        "morality": -2
+        "morality": -2,
+        "temper": -1,
+        "ambition": -1
       },
       "Refuse and tell him exactly why": {
         "morality": 2,
-        "temper": 1
+        "temper": 1,
+        "ambition": -1
       },
       "Say yes, then quietly do it your way": {
         "ambition": 2,
-        "loyalty": -1
+        "loyalty": -1,
+        "temper": -1
       },
       "Lose your temper and walk out": {
         "temper": 2,
@@ -88,7 +101,9 @@
     "text": "How would your friends describe you?",
     "options": {
       "The one who makes everyone laugh": {
-        "humor": 2
+        "humor": 2,
+        "temper": -1,
+        "ambition": -1
       },
       "The one who never backs down": {
         "temper": 2,
@@ -96,11 +111,13 @@
       },
       "The one with the big plans": {
         "ambition": 2,
-        "humor": -1
+        "humor": -1,
+        "loyalty": -1
       },
       "The one you can always count on": {
         "loyalty": 2,
-        "morality": 1
+        "morality": 1,
+        "temper": -1
       }
     }
   },
@@ -109,7 +126,8 @@
     "options": {
       "Shoot your way out": {
         "temper": 2,
-        "morality": -2
+        "morality": -2,
+        "humor": -1
       },
       "Stay behind so the others can escape": {
         "loyalty": 2,
@@ -131,12 +149,14 @@
     "options": {
       "Power, money and respect": {
         "ambition": 2,
-        "morality": -1
+        "morality": -2,
+        "humor": -1
       },
       "A quiet life with the people I love": {
         "ambition": -2,
         "loyalty": 1,
-        "morality": 1
+        "morality": 1,
+        "temper": -1
       },
       "To have fun every single day": {
         "humor": 2,
@@ -144,7 +164,8 @@
       },
       "To make up for my mistakes": {
         "morality": 2,
-        "temper": -1
+        "temper": -1,
+        "humor": -1
       }
     }
   },
@@ -157,12 +178,14 @@
       },
       "Make them pay, today": {
         "temper": 2,
-        "morality": -1
+        "morality": -1,
+        "humor": -1
       },
       "Cut them off quietly and move on": {
         "ambition": 1,
         "temper": -1,
-        "loyalty": -1
+        "loyalty": -1,
+        "humor": -1
       },
       "Laugh it off, you saw it coming": {
         "humor": 2,
@@ -175,11 +198,14 @@
     "options": {
       "Drinking and telling stories with the crew": {
         "humor": 2,
-        "loyalty": 1
+        "loyalty": 1,
+        "ambition": -1
       },
       "Going over the plan again, alone and silent": {
         "humor": -2,
-        "ambition": 2
+        "ambition": 2,
+        "temper": -1,
+        "loyalty": -1
       },
       "With the people you love, in case it goes wrong": {
         "loyalty": 2,
@@ -189,7 +215,8 @@
       "Starting trouble somewhere to burn off the nerves": {
         "temper": 2,
         "humor": -1,
-        "ambition": -1
+        "ambition": -1,
+        "morality": -1
       }
     }
   },
@@ -198,7 +225,8 @@
     "options": {
       "Take it, loyalty doesn't pay the bills": {
         "ambition": 2,
-        "loyalty": -2
+        "loyalty": -2,
+        "morality": -1
       },
       "Tell your crew before he finishes talking": {
         "loyalty": 2,
