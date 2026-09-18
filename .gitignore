@@ -222,3 +222,6 @@ data/user_ratings.json
 data/quiz_results.json
 *.bak
 *.tmp
+
+# Files downloaded from the Claude desktop app land here
+Claude outputs/

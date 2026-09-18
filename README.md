@@ -59,7 +59,7 @@ There is also a **web version** of the quiz and the character browser, built wit
 - **Rate a character** → choose a series and a character, then enter a score from 0 to 10 for each criterion.
 - **My tier list** → see your rated characters grouped by tier.
 - **Compare two characters** → pick two of your rated characters.
-- **Which character are you?** → pick **Take the quiz** (8 multiple-choice questions) or **Interview with AI** (5 open questions from the AI), pick a series, and get your top 3 matches. **My results** shows your past results.
+- **Which character are you?** → pick **Take the quiz** (10 multiple-choice questions) or **Interview with AI** (5 open questions from the AI), pick a series, and get your top 3 matches. **My results** shows your past results.
 - **Settings** → turn spoiler mode on/off or reset your ratings.
 - **Log out** → go back to the start menu.
 
@@ -71,6 +71,8 @@ There is also a **web version** of the quiz and the character browser, built wit
 
 ## Web version
 `app.py` is a [Streamlit](https://streamlit.io) front end for the two features that work well for anyone with a browser: the **"Which character are you?" quiz** and the **character browser**. It imports the same functions from `hub/` as the terminal app, so both versions always calculate a match the same way.
+
+The web version is **bilingual**: a switch in the corner turns the whole page into Arabic — interface, quiz questions, answers, trait names and all 47 character bios and story notes — with a right-to-left layout and a mirrored trait chart. Every Arabic string lives in `data/ar.json`; the English text stays the internal key, so the scoring never depends on the display language.
 
 Run it locally with:
 ```
@@ -101,7 +103,8 @@ UNIT_PROJECT/
 │       └── admin_menu.py   # everything the admin can do
 └── data/
     ├── characters.json
-    └── questions.json
+    ├── questions.json
+    └── ar.json             # every Arabic string for the web version
 ```
 Files created while using the app (not tracked by git): `data/user_ratings.json`, `data/quiz_results.json`.
 
