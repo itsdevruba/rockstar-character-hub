@@ -188,7 +188,7 @@
       "ambition": 3
     },
     "bio": "A war veteran from Eastern Europe who arrives in Liberty City in 2008 after his cousin Roman promises him the American Dream. He wants to leave his violent past behind, but he is also quietly searching for the man who betrayed his unit during the war.",
-    "spoiler_notes": "Niko tracks down the traitors, Florian Cravic and Darko Brevic, and can choose whether to kill Darko. The ending depends on the Deal or Revenge choice: Roman is killed at his wedding in Deal, while Kate McReary is killed in Revenge.",
+    "spoiler_notes": "Niko tracks down the traitors, Florian Cravic and Darko Brevic, and can choose whether to kill Darko. The ending depends on the Deal or Revenge choice: Roman is killed at his wedding in Revenge, while Kate McReary is killed in Deal.",
     "community_tier": "",
     "source": "https://gta.fandom.com/wiki/Niko_Bellic",
     "custom": false
@@ -212,7 +212,7 @@
       "ambition": 7
     },
     "bio": "Niko's optimistic cousin who runs a small taxi company in Broker. He lured Niko to America with exaggerated stories about mansions and sports cars, while actually being deep in gambling debts.",
-    "spoiler_notes": "Roman's debts and friendships repeatedly drag Niko into danger. In the Deal ending, Roman is killed at his own wedding; in the Revenge ending, he survives.",
+    "spoiler_notes": "Roman's debts and friendships repeatedly drag Niko into danger. In the Revenge ending, Roman is killed at his own wedding; in the Deal ending, he survives.",
     "community_tier": "",
     "source": "https://gta.fandom.com/wiki/Roman_Bellic",
     "custom": false
@@ -878,7 +878,7 @@
     "custom": false
   },
   {
-    "id": "orville-swanson",
+    "id": "reverend-swanson",
     "name": "Reverend Swanson",
     "series": "Red Dead",
     "game": "Red Dead Redemption 2",
