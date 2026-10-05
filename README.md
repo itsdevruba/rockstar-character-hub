@@ -5,7 +5,7 @@ An interactive command-line app for fans of Rockstar Games. Browse characters fr
 
 The hub has two kinds of users: **users**, who log in with their name and keep their own ratings and quiz results, and an **admin**, who manages quiz results, users and characters.
 
-There is also a **web version** of the quiz and the character browser, built with Streamlit: *(live link to be added after deployment)*
+There is also a **web version** of the quiz and the character browser, built with Streamlit: **[Try the live web version](https://rockstar-characters.streamlit.app/)**
 
 ## Features & User Stories
 
@@ -74,6 +74,8 @@ There is also a **web version** of the quiz and the character browser, built wit
 
 The web version is **bilingual**: a switch in the corner turns the whole page into Arabic — interface, quiz questions, answers, trait names and all 47 character bios and story notes — with a right-to-left layout and a mirrored trait chart. Every Arabic string lives in `data/ar.json`; the English text stays the internal key, so the scoring never depends on the display language.
 
+The web version is deployed on [Streamlit Community Cloud](https://streamlit.io/cloud) (Python 3.12) from the `main` branch: **https://rockstar-characters.streamlit.app/**
+
 Run it locally with:
 ```
 streamlit run app.py
@@ -119,6 +121,7 @@ Files created while using the app (not tracked by git): `data/user_ratings.json`
 | [ollama](https://pypi.org/project/ollama/) | Talking to the local AI model for the "Interview with AI" quiz |
 | [streamlit](https://pypi.org/project/streamlit/) | The web version: pages, tabs, forms and state |
 | [plotly](https://pypi.org/project/plotly/) | The trait comparison chart in the web version |
+| [pandas](https://pypi.org/project/pandas/) | Installed explicitly for the web version, because plotly relies on it |
 
 #### Built-in Python modules
 | Module | What it's used for |
